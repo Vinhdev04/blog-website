@@ -1,0 +1,235 @@
+:root {
+  --primary-color: #6366f1;
+  --accent-color: #a5b4fc;
+  --text-color: #22223b;
+  --bg-color: #f8fafc;
+  --card-bg: #fff;
+  --shadow: 0 6px 32px 0 rgba(60, 72, 88, 0.15);
+}
+
+/* body {
+  background: var(--bg-color);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  color: var(--text-color);
+} */
+
+.cv-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 32px 16px;
+  background: var(--bg-color);
+}
+
+.cv-header {
+  margin-bottom: 2.5rem;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 2rem 2.5rem;
+  background: linear-gradient(
+    90deg,
+    var(--primary-color) 0%,
+    var(--accent-color) 100%
+  );
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  animation: fadeInDown 0.8s;
+}
+
+.profile-image img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 16px 0 rgba(60, 72, 88, 0.12);
+  transition: transform 0.4s;
+}
+.profile-image img:hover {
+  transform: scale(1.07) rotate(-2deg);
+}
+
+.profile-info h1 {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(60, 72, 88, 0.12);
+}
+.profile-info p {
+  color: #e0e7ff;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.cv-content {
+  margin-top: 2rem;
+}
+
+.cv-section {
+  background: var(--card-bg);
+  border-radius: 14px;
+  padding: 2rem 2.5rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s forwards;
+}
+.cv-section:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.cv-section:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.cv-section:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.cv-section h2 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.education-card h3 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+.education-card p.gpa {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-top: 0.2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+
+.skill-item {
+  margin-bottom: 0.7rem;
+}
+
+.skill-item span {
+  font-weight: 500;
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.skill-bar {
+  height: 11px;
+  background: #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 0.4rem;
+  box-shadow: 0 1px 4px 0 rgba(60, 72, 88, 0.07);
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--primary-color) 60%,
+    var(--accent-color) 100%
+  );
+  border-radius: 6px;
+  transition: width 1.2s cubic-bezier(0.4, 2, 0.6, 1);
+  animation: progressGrow 1.2s;
+}
+
+.experience-card {
+  padding: 1.5rem 1.2rem;
+  border-left: 4px solid var(--primary-color);
+  margin: 1rem 0;
+  background: #f3f4f6;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px 0 rgba(60, 72, 88, 0.07);
+  transition: transform 0.25s cubic-bezier(0.4, 2, 0.6, 1), box-shadow 0.25s;
+}
+.experience-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px 0 rgba(60, 72, 88, 0.18);
+}
+
+.company {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+.achievements {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.7rem;
+}
+.achievements li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+  color: #22223b;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.achievements li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: bold;
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  .cv-container {
+    padding: 0.5rem;
+  }
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.2rem;
+  }
+  .cv-section {
+    padding: 1.2rem;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes progressGrow {
+  from {
+    width: 0;
+  }
+  to {
+  }
+}

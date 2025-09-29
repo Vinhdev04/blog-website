@@ -1,0 +1,24 @@
+.blog-title {
+  letter-spacing: 1px;
+  transition: text-shadow 0.3s;
+}
+.blog-title:hover {
+  text-shadow: 0 4px 24px #a78bfa, 0 2px 8px #6366f1;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.animate-fade-in {
+  animation: fade-in 1s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+.animate-fade-in-slow {
+  animation: fade-in 1.5s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
