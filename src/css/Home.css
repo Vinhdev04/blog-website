@@ -1,0 +1,91 @@
+.home-hero {
+  min-height: 70vh;
+  background: linear-gradient(120deg, #e0e7ff 0%, #c7d2fe 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.home-hero h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: #111;
+}
+
+.home-hero .highlight {
+  color: #4f46e5;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.home-hero p {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 36px;
+  max-width: 700px;
+}
+
+.home-actions {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 14px 36px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: 2px solid #4f46e5;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: #4f46e5;
+  color: #fff;
+  border: 2px solid #4f46e5;
+}
+
+.btn-primary:hover {
+  background: #3730a3;
+  border-color: #3730a3;
+}
+
+.btn-outline {
+  background: #fff;
+  color: #4f46e5;
+}
+
+.btn-outline:hover {
+  background: #e0e7ff;
+}
+.home-root {
+  background: #f6f7fb;
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.container + .container {
+  margin-top: 48px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    max-width: 100%;
+    padding: 0 12px;
+  }
+}

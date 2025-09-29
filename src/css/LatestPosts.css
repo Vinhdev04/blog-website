@@ -1,0 +1,131 @@
+.latest-section {
+  background: #fafbff;
+  padding: 48px 0 32px 0;
+  text-align: center;
+}
+
+.latest-section h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 32px;
+  color: #18181b;
+}
+
+.latest-list {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.latest-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(80, 80, 120, 0.08);
+  overflow: hidden;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: box-shadow 0.2s;
+}
+
+.latest-card:hover {
+  box-shadow: 0 12px 40px 0 rgba(80, 80, 120, 0.14);
+}
+
+.latest-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.latest-content {
+  padding: 22px 22px 18px 22px;
+  text-align: left;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.latest-meta {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 8px;
+}
+
+.latest-category {
+  background: #b4b8fd;
+  color: #4f46e5;
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.latest-time {
+  color: #6c6c8c;
+  font-size: 0.95rem;
+}
+
+.latest-content h3 {
+  font-size: 1.18rem;
+  font-weight: 700;
+  margin: 10px 0 8px 0;
+  color: #18181b;
+}
+
+.latest-content p {
+  color: #444;
+  margin-bottom: 18px;
+  font-size: 1rem;
+}
+
+.latest-author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #7c83fd;
+  margin-bottom: 8px;
+  font-size: 0.98rem;
+}
+
+.author-avatar {
+  font-size: 1.1rem;
+}
+
+.latest-date {
+  color: #888;
+  font-size: 0.95rem;
+}
+
+.latest-readmore {
+  color: #4f46e5;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: 4px;
+  transition: color 0.2s;
+}
+
+.latest-readmore:hover {
+  color: #3730a3;
+}
+
+.latest-all-btn {
+  background: #4f46e5;
+  color: #fff;
+  padding: 14px 48px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+  display: inline-block;
+}
+
+.latest-all-btn:hover {
+  background: #3730a3;
+}
