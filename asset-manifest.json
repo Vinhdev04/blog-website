@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Vinhdev04/blog-website/static/css/main.fdbb366d.css",
+    "main.js": "/Vinhdev04/blog-website/static/js/main.636b709d.js",
+    "index.html": "/Vinhdev04/blog-website/index.html",
+    "main.fdbb366d.css.map": "/Vinhdev04/blog-website/static/css/main.fdbb366d.css.map",
+    "main.636b709d.js.map": "/Vinhdev04/blog-website/static/js/main.636b709d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fdbb366d.css",
+    "static/js/main.636b709d.js"
+  ]
+}
