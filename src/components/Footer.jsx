@@ -38,7 +38,7 @@ const Footer = () => (
     </div>
     <hr />
     <div className="footer-bottom">
-      © 2024 Personal Blog. Tất cả quyền được bảo lưu. <a href="#">Powered by Readdy</a>
+      © 2024 Personal Blog. Tất cả quyền được bảo lưu. <a href="#">Powered by Vinhdev</a>
     </div>
   </footer>
 );
